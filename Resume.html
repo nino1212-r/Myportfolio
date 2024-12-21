@@ -1,126 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Experience</title>
-	<link rel="stylesheet" type="text/css" href="stylesss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesss.css">
 </head>
-
 <body>
-	<!-- Header Section -->
-	<header>
-		<a href="index.html" class="logo">Niño</a>
-		<nav>
-			<a href="index.html" class="active">Home</a>
-			<a href="skill.html">Skills</a>
-			<a href="Resume.html">Experience</a>
-			<a href="contact.html">Contact</a>
-		</nav>
-	</header>
+    <div class="container">
+        <!-- Documentation Section -->
+        <h1>Documentation</h1>
+        <section class="slider">
+            <div class="slides">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
 
-	<!-- Main Content -->
-	<div class="container"><br><br><br><br>
-		
-		<!-- Documentation Section -->
-		<h1>Documentation</h1>
-		<section class="slider">
-			<div class="slides">
-				<input type="radio" name="slider" id="slide1" checked>
-				<input type="radio" name="slider" id="slide2">
-				<input type="radio" name="slider" id="slide3">
+                <!-- Slides -->
+                <div class="slide first">
+                    <img src="screenshot.png" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="screenshot2.png" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="screenshot3.png" alt="Slide 3">
+                </div>
+                <div class="slide">
+                    <img src="seo1.png" alt="Slide 4">
+                </div>
+                <div class="slide">
+                    <img src="seo2.png" alt="Slide 5">
+                </div>
+                <div class="slide">
+                    <img src="seo3.png" alt="Slide 6">
+                </div>
+            </div>
+        </section>
 
-				<!-- Slides -->
-				<div class="slide first">
-					<img src="screenshot.png" alt="Slide 1">
-				</div>
-				<div class="slide">
-					<img src="screenshot2.png" alt="Slide 2">
-				</div>
-				<div class="slide">
-					<img src="screenshot3.png" alt="Slide 3">
-				</div>
-				<div class="slide">
-					<img src="seo1.png" alt="Slide 3">
-				</div>
-				<div class="slide">
-					<img src="seo2.png" alt="Slide 3">
-				</div>
-				<div class="slide">
-					<img src="seo3.png" alt="Slide 3">
-				</div>
-			</div>
-		</section>
-
-		<!-- Experience Section (Moved to the Bottom) -->
-		<main class="row">
-			<!-- First Column -->
-			<section class="col">
-				<div class="contents">
-					<div class="box">
-						<h4>October 2019 – March 2020</h4>
-						<h3>Google Ads Specialist • Import Car Specialists</h3>
-						<p>Managed the day-to-day operations of Google Ads accounts, including account setup and optimization.</p>
-						<p>Created reports for management on key metrics such as revenue and campaign performance.</p>
-					</div>
-
-					<div class="box">
-						<h4>May 2020 – February 2021</h4>
-						<h3>Google Ads Specialist • ArborPro</h3>
-						<p>Conducted keyword research and monitored performance of search terms for optimal results.</p>
-						<p>Managed PPC account budgets and created weekly performance reports for review.</p>
-					</div>
-
-					<div class="box">
-						<h4>March 2021 – January 2022</h4>
-						<h3>Google Ads Specialist • Chimney Masters</h3>
-						<p>Monitored, analyzed, and reported on campaign performance, making recommendations for optimization.</p>
-						<p>Developed and launched targeted Google Ads campaigns (Search, Display, Shopping, and Video).</p>
-					</div>
-				</div>
-			</section>
-
-			<!-- Second Column -->
-			<section class="col">
-				<div class="contents">
-					<div class="box">
-						<h4>May 2022 - November 2022</h4>
-						<h3>Jr. Web Developer (Part-Time)</h3>
-						<p>Developed responsive websites using HTML, CSS, and JavaScript for seamless user experiences.</p>
-						<p>Implemented animations and responsive layouts for improved visual appeal.</p>
-					</div>
-
-					<div class="box">
-						<h4>December 2022 - July 2023</h4>
-						<h3>SEO Specialist – Entry Level</h3>
-						<p>Conducted keyword research and optimized content for better rankings and organic traffic.</p>
-						<p>Improved meta titles, descriptions, and headings to align with SEO best practices.</p>
-					</div>
-
-					<div class="box">
-						<h4>September 2023 - October 2024</h4>
-						<h3>Frontend Developer & SEO</h3>
-						<p>Developed user-friendly websites using HTML, CSS, and JavaScript with responsive designs.</p>
-						<p>Optimized content, headings, and image alt tags for improved SEO performance.</p>
-					</div>
-				</div>
-			</section>
-		</main>
-	</div>
-
-	<!-- JavaScript for Auto-Slide -->
-	<script>
-		let index = 0;
-		const slides = document.querySelectorAll('.slide');
-		const totalSlides = slides.length;
-
-		function showSlide() {
-			slides.forEach((slide, i) => {
-				slide.style.transform = `translateX(-${index * 100}%)`;
-			});
-			index = (index + 1) % totalSlides; // Cycle through slides
-		}
-		setInterval(showSlide, 3000); // Auto-slide every 3 seconds
-	</script>
+        <!-- Experience Section -->
+        <h1>Experience</h1>
+        <main class="row">
+            <section class="col">
+                <div class="contents">
+                    <div class="box">
+                        <h4>October 2019 – March 2020</h4>
+                        <h3>Google Ads Specialist • Import Car Specialists</h3>
+                        <p>Managed the day-to-day operations of Google Ads accounts, including account setup and optimization.</p>
+                        <p>Created reports for management on key metrics such as revenue and campaign performance.</p>
+                    </div>
+                    <div class="box">
+                        <h4>May 2020 – February 2021</h4>
+                        <h3>Google Ads Specialist • ArborPro</h3>
+                        <p>Conducted keyword research and monitored performance of search terms for optimal results.</p>
+                        <p>Managed PPC account budgets and created weekly performance reports for review.</p>
+                    </div>
+                    <div class="box">
+                        <h4>March 2021 – January 2022</h4>
+                        <h3>Google Ads Specialist • Chimney Masters</h3>
+                        <p>Monitored, analyzed, and reported on campaign performance, making recommendations for optimization.</p>
+                        <p>Developed and launched targeted Google Ads campaigns (Search, Display, Shopping, and Video).</p>
+                    </div>
+                </div>
+            </section>
+            <section class="col">
+                <div class="contents">
+                    <div class="box">
+                        <h4>December 2022 – July 2023</h4>
+                        <h3>SEO Specialist – Entry Level</h3>
+                        <p>Conducted keyword research and optimized content for better rankings and organic traffic.</p>
+                        <p>Improved meta titles, descriptions, and headings to align with SEO best practices.</p>
+                    </div>
+                    <div class="box">
+                        <h4>September 2023 – October 2024</h4>
+                        <h3>Frontend Developer & SEO</h3>
+                        <p>Developed user-friendly websites using HTML, CSS, and JavaScript with responsive designs.</p>
+                        <p>Optimized content, headings, and image alt tags for improved SEO performance.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
