@@ -186,7 +186,7 @@ span{
     position: relative;
 }
 .typing-text span::before{
-    content: "Developer";
+    content: "Graphic Designer";
     color: #b74b4b;
     animation: words 10s infinite;
 }
